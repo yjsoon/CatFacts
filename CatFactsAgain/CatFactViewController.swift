@@ -23,7 +23,29 @@ class CatFactViewController: UIViewController {
     }
 
     @IBAction func gimmeCatFact(_ sender: Any) {
+        
+        let url = URL(string: "https://cat-fact.herokuapp.com/facts/random")!
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let data = data, let response = response {
+                print(data)
+                print("")
+                print(response)
+            }
+        }
+        task.resume()  // 🤷‍♂️
+        
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
 
