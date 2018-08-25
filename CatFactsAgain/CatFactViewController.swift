@@ -25,7 +25,10 @@ class CatFactViewController: UIViewController {
     @IBAction func gimmeCatFact(_ sender: Any) {
         fetchOnlineCatFact { (catFact) in
             if let catFact = catFact {
-                print(catFact)
+                DispatchQueue.main.async {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false 
+                    self.catFactLabel.text = catFact.text
+                }
             }
         }
     }
@@ -42,6 +45,7 @@ class CatFactViewController: UIViewController {
                 completion(nil)
             }
         }
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         task.resume()  // 🤷‍♂️
     }
     
