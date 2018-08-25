@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CatFactViewController.swift
 //  CatFactsAgain
 //
 //  Created by Soon Yin Jie on 25/8/18.
@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CatFactViewController: UIViewController {
 
+    @IBOutlet weak var catFactLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func gimmeCatFact(_ sender: Any) {
+    }
+    
 }
 
