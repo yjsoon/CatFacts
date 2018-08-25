@@ -26,8 +26,13 @@ class CatFactViewController: UIViewController {
         
         let url = URL(string: "https://cat-fact.herokuapp.com/facts/random")!
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                print(dataString)
+            
+            let jsonDecoder = JSONDecoder()
+            
+            if let data = data,
+                let catFact = try? jsonDecoder.decode(CatFact.self, from: data)
+                {
+                print(catFact)
             }
         }
         task.resume()  // 🤷‍♂️
