@@ -23,20 +23,22 @@ class CatFactViewController: UIViewController {
     }
 
     @IBAction func gimmeCatFact(_ sender: Any) {
-        
+        fetchOnlineCatFact { (catFact) in
+            print(catFact)
+        }
+    }
+    
+    func fetchOnlineCatFact(completion: @escaping (CatFact) -> Void) {
         let url = URL(string: "https://cat-fact.herokuapp.com/facts/random")!
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             let jsonDecoder = JSONDecoder()
             
-            if let data = data,
-                let catFact = try? jsonDecoder.decode(CatFact.self, from: data)
-                {
-                print(catFact)
+            if let data = data, let catFact = try? jsonDecoder.decode(CatFact.self, from: data) {
+                completion(catFact)
             }
         }
         task.resume()  // 🤷‍♂️
-        
     }
     
 }
