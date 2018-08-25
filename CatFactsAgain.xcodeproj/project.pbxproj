@@ -13,6 +13,7 @@
 		AF74A6332130F0FD003E92D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF74A6322130F0FD003E92D9 /* Assets.xcassets */; };
 		AF74A6362130F0FD003E92D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF74A6342130F0FD003E92D9 /* LaunchScreen.storyboard */; };
 		AF74A63E2130F47E003E92D9 /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74A63D2130F47E003E92D9 /* CatFact.swift */; };
+		AF74A640213108C0003E92D9 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74A63F213108C0003E92D9 /* UIImage+Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AF74A6352130F0FD003E92D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF74A6372130F0FD003E92D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF74A63D2130F47E003E92D9 /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CatFact.swift; path = CatFactsAgain/CatFact.swift; sourceTree = "<group>"; };
+		AF74A63F213108C0003E92D9 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "CatFactsAgain/UIImage+Gif.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				AF74A63D2130F47E003E92D9 /* CatFact.swift */,
+				AF74A63F213108C0003E92D9 /* UIImage+Gif.swift */,
 				AF74A62A2130F0FA003E92D9 /* CatFactsAgain */,
 				AF74A6292130F0FA003E92D9 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			files = (
 				AF74A62E2130F0FA003E92D9 /* CatFactViewController.swift in Sources */,
 				AF74A62C2130F0FA003E92D9 /* AppDelegate.swift in Sources */,
+				AF74A640213108C0003E92D9 /* UIImage+Gif.swift in Sources */,
 				AF74A63E2130F47E003E92D9 /* CatFact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

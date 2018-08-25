@@ -63,10 +63,8 @@ class CatFactViewController: UIViewController {
     func fetchCatGif(completion: @escaping (UIImage?) -> Void) {
         let url = URL(string: "https://api.thecatapi.com/v1/images/search?format=src&mime_types=image/gif")!
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
-            let jsonDecoder = JSONDecoder()
-            
-            if let data = data, let image = UIImage(data: data) {
+                        
+            if let data = data, let image = UIImage.gif(data: data) {
                 completion(image)
             } else {
                 completion(nil)
