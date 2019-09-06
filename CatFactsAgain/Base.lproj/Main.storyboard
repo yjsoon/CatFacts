@@ -26,7 +26,7 @@
                                 </constraints>
                                 <state key="normal" title="GIMME A CAT FACT MEOW"/>
                                 <connections>
-                                    <action selector="gimmeCatFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YG0-o5-x8U"/>
+                                    <action selector="getCatFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YG0-o5-x8U"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat fact goes here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hw-c0-NkM">

@@ -22,8 +22,8 @@ class CatFactViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func gimmeCatFact(_ sender: Any) {
+    
+    @IBAction func getCatFact(_ sender: Any) {
         fetchOnlineCatFact { (catFact) in
             if let catFact = catFact {
                 DispatchQueue.main.async {
