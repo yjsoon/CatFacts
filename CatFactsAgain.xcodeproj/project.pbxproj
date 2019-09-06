@@ -24,8 +24,8 @@
 		AF74A6322130F0FD003E92D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF74A6352130F0FD003E92D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF74A6372130F0FD003E92D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF74A63D2130F47E003E92D9 /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CatFact.swift; path = CatFactsAgain/CatFact.swift; sourceTree = "<group>"; };
-		AF74A63F213108C0003E92D9 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "CatFactsAgain/UIImage+Gif.swift"; sourceTree = "<group>"; };
+		AF74A63D2130F47E003E92D9 /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
+		AF74A63F213108C0003E92D9 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +42,6 @@
 		AF74A61F2130F0FA003E92D9 = {
 			isa = PBXGroup;
 			children = (
-				AF74A63D2130F47E003E92D9 /* CatFact.swift */,
-				AF74A63F213108C0003E92D9 /* UIImage+Gif.swift */,
 				AF74A62A2130F0FA003E92D9 /* CatFactsAgain */,
 				AF74A6292130F0FA003E92D9 /* Products */,
 			);
@@ -61,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				AF74A62B2130F0FA003E92D9 /* AppDelegate.swift */,
+				AF74A63D2130F47E003E92D9 /* CatFact.swift */,
 				AF74A62D2130F0FA003E92D9 /* CatFactViewController.swift */,
 				AF74A62F2130F0FA003E92D9 /* Main.storyboard */,
 				AF74A6322130F0FD003E92D9 /* Assets.xcassets */,
 				AF74A6342130F0FD003E92D9 /* LaunchScreen.storyboard */,
 				AF74A6372130F0FD003E92D9 /* Info.plist */,
+				AF74A63F213108C0003E92D9 /* UIImage+Gif.swift */,
 			);
 			path = CatFactsAgain;
 			sourceTree = "<group>";
